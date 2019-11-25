@@ -1,0 +1,16 @@
+
+Git安装方法：
+1、下载安装git
+2、github建立代码仓库
+3、本地创建ssh key：ssh-keygen -t rsa -C "XXX"XXX为注册邮箱地址
+4、在github上添加ssh key
+5、验证是否可以连接上github:ssh -T git@github.com
+6、设置本地上传到github的用户名和邮箱地址：git config --global user.name/git config --global user.email
+
+Git使用方法：
+1、git init本地代码仓库初始化
+2、git remote add origin添加远程仓库地址
+3、git pull origin master拉取远程仓库文件
+4、git add -A添加本地仓库文件的所有修改项到提交列表
+5、git commit -m "XXX"提交修改
+6、git push origin master把本地仓库提交的修改项推送至远程仓库里面
